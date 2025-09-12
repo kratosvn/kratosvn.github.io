@@ -36,7 +36,7 @@
     <div class="sidebar-wrapper">
         <div class="profile-container">
             <img alt="Bui The Cuong profile picture" class="profile" src="assets/images/profile.jpg"/>
-            <h1 class="name"> Cuong Bui The </h1>
+            <h1 class="name">Bui The Cuong </h1>
             <h3 class="tagline"> Tech Lead </h3>
         </div>
         <div class="contact-container container-block">
@@ -75,7 +75,10 @@
     </div>
     <div class="main-wrapper">
         <section class="section summary-section">
-            <h2 class="section-title"><i class="fa fa-keyboard-o"></i> Skills </h2>
+            <h2 class="section-title"><i class="fa fa-keyboard-o"></i> Summary </h2>
+            <div class="summary">
+                Tech Lead with 5+ years of experience in building scalable e-commerce platforms, leading teams of developers and QAs to deliver high-performance systems. Skilled in system design, microservices, and data synchronization, with proven success in platform migration and mentoring engineers to senior levels.
+            </div>
             <div class="summary">
                 <ul>
                     <li>Languages: Golang, PHP, Python, Javascript</li>
@@ -91,7 +94,7 @@
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
-                        <h3 class="job-title"> ShopBase Ecommerce Platform </h3>
+                        <h3 class="job-title">Tech Lead - ShopBase Ecommerce Platform </h3>
                         <div class="time"> 2018/06 - Present</div>
                     </div>
                     <div class="company"> OpenCommerce Group.</div>
@@ -100,47 +103,133 @@
                     <div class="custom-paragraph"><a href="https://www.shopbase.com/" target="_blank">ShopBase</a> is a cross-border e-commerce platform from Vietnam designed to support dropshipping, POD, and online retailers in building and scaling their online businesses.
                     </div>
                     <div class="custom-paragraph">
-                        I was the Tech Lead of a team of 7 developers and 7 QAs to build an application that allows POD sellers to design products using an online editor like Photoshop, manage orders, and build systems for order operations and other activities.
+                        Led the development of core modules for ShopBase, including product data pipelines, scalable import/export systems, checkout optimization, and high-performance image services. Ensured platform scalability and stability while mentoring the engineering team.
                     </div>
-                    <b>Main Responsibilities:</b>
+                    <h4>Main Responsibilities:</h4>
                     <ul>
                          <li>Worked with customers to solve problems and improve the product</li>
                          <li>Designed technical solutions based on development specs</li>
                          <li>Supported and collaborated with developers to meet deadlines and ensure product quality</li>
                          <li>Trained team members in technical and soft skills</li>
                     </ul>
-                    <b>Key Achievements: </b>
-                    <ul>
-                        <li>Launched the product <a href="https://www.printbase.com/" target="_blank">PrintBase</a> with $2 million/month revenue</li>
-                        <li>Developed a toolset allowing customers to edit PSD files and preview changes live</li>
-                        <li>Built the ShopBase platform with over 5 billion products and 50 million requests per day</li>
-                        <li>Implemented and maintained MySQL to ES data sync with 1 million messages/day</li>
-                        <li>Migrated legacy systems from PHP to Golang</li>
-                        <li>Team members advanced from fresher to senior level</li>
-                    </ul>
-                    <b>Technologies Used</b>
-                    <div style="line-height: 1.8">
-                        <span class="tag-skill">Golang</span>
-                        <span class="tag-skill">PHP</span>
-                        <span class="tag-skill">Python</span>
-                        <span class="tag-skill">Nodejs</span>
-                        <span class="tag-skill">Vue2</span>
-                        <span class="tag-skill">Vue3</span>
-                        <span class="tag-skill">Inhouse Microservice framework - gRPC</span>
-                        <span class="tag-skill">RabbitMQ</span>
-                        <span class="tag-skill">AWS S3</span>
-                        <span class="tag-skill">RDS</span>
-                        <span class="tag-skill">EKS</span>
-                        <span class="tag-skill">Cloudflare - Openresty</span>
-                        <span class="tag-skill">MySQL</span>
-                        <span class="tag-skill">MongoDB</span>
-                    </div>
+                    <h4>Key Achievements: </h4>
+                    <section>
+                        <b>Product Module</b>
+                        <ul>
+                            <li>Designed and implemented high-throughput MySQL → Elasticsearch sync, powering product search and recommendation, handling up to 500 QPS at peak.
+                            </li>
+                            <li>
+                                Built a robust Product Import system capable of processing complex file structures, with a queue/scheduler architecture ensuring hundreds of concurrent imports without downtime.
+                            </li>
+                            <li>
+                                Architected the Product Feed system (CSV/JSON, GMC), delivering stable and scalable exports to thousands of merchants daily.
+                            </li>
+                            <li>
+                                Tech stack: Golang, MySQL, Redis, RabbitMQ, Elasticsearch
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Storefront Checkout</b>
+                        <ul>
+                            <li>Optimized checkout performance, consistently achieving Google PageSpeed > 80.
+                            </li>
+                            <li>
+                                Integrated multiple secure payment gateways with a modular, extensible design.
+                            </li>
+                            <li>
+                                Tech stack: Qwik framework
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Image Service</b>
+                        <ul>
+                            <li>Developed a high-performance image processing service (resize, crop, smart crop) serving tens of millions of requests daily.
+                            </li>
+                            <li>
+                            Engineered hybrid storage (S3 + local cache) and CDN integration with Cloudflare for cost-effective scaling.
+                            </li>
+                            <li>
+                                Tech stack: Golang, libvips, OpenResty, S3, Cloudflare
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
-                        <h3 class="job-title"> Risk and Fraud System on Payment Wall </h3>
+                        <h3 class="job-title">Tech Lead - PrintBase (POD Platform - ShopBase Ecosystem) </h3>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="custom-paragraph"><a href="https://www.printbase.com/" target="_blank">Printbase</a> Built and scaled an end-to-end print-on-demand platform enabling merchants to design, sell, and fulfill customized products globally with automated workflows and high profitability
+                    </div>
+                    <h4>Key Achievements: </h4>
+                    <section>
+                        <b>POD Editor</b>
+                        <ul>
+                            <li>Led development of a web-based design editor with Photoshop-like features, enabling customers to create and customize POD products.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Mockup Rendering Engine</b>
+                        <ul>
+                            <li>Built a smart-object PSD rendering system, automatically generating high-quality product images at scale.
+                            </li>
+                            <li>
+                                Conducted deep research into PSD internals & Photopea to achieve accurate rendering performance.
+                            </li>
+                            <li>
+                                Tech stack: Python, Golang, JavaScript, Photopea
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Live Preview</b>
+                        <ul>
+                            <li>Engineered real-time customization on storefronts, allowing buyers to preview personalized products.
+                            </li>
+                            <li>
+                            Overcame complex challenges in parsing and rendering PSD files directly in the browser with Node.js.
+                            </li>
+                            <li>
+                                Tech stack: Python, Node.js
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Order Management & Fulfillment</b>
+                        <ul>
+                            <li>
+                               Designed backend modules to streamline order workflows from design to fulfillment, ensuring reliability at high transaction volumes.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <b>Technologies Used</b>
+                        <div style="line-height: 1.8">
+                            <span class="tag-skill">Golang</span>
+                            <span class="tag-skill">PHP</span>
+                            <span class="tag-skill">Python</span>
+                            <span class="tag-skill">Nodejs</span>
+                            <span class="tag-skill">Vue3</span>
+                            <span class="tag-skill">GRPC</span>
+                            <span class="tag-skill">RabbitMQ</span>
+                            <span class="tag-skill">S3</span>
+                            <span class="tag-skill">MySQL</span>
+                            <span class="tag-skill">Postgre</span>
+                            <span class="tag-skill">Es</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">Developer - Risk and Fraud System on Payment Wall </h3>
                         <div class="time"> 2017/03 - 2018/06</div>
                     </div>
                     <div class="company"> Paymentwall Inc.</div>
@@ -160,15 +249,13 @@
                          <li>Improved code structure and readability using design pattern factories and dependency injection</li>
                          <li>Implemented full test coverage: unit, functional, RESTful API, and behavior-driven tests using Codeception </li>
                     </ul>
-                    <b>Công nghệ</b>
+                    <b>Skills</b>
                     <div style="line-height: 1.8">
                         <span class="tag-skill">PHP</span>
-                        <span class="tag-skill">Zend</span>
                         <span class="tag-skill">Laravel</span>
                         <span class="tag-skill">Mysql</span>
                         <span class="tag-skill">Angular2</span>
                         <span class="tag-skill">Git</span>
-                        <span class="tag-skill">SVN</span>
                         <span class="tag-skill">Unit Test</span>
                     </div>
                 </div>
@@ -181,68 +268,37 @@
                 <div class="item">
                     <h3 class="level-title"> Golang </h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="80%"></div>
+                        <div class="level-bar-inner" data-level="80%" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="item">
                     <h3 class="level-title"> Vuejs </h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%"></div>
+                        <div class="level-bar-inner" data-level="80%" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="level-title"> MS </h3>
+                    <h3 class="level-title">RabbitMQ</h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%"></div>
+                        <div class="level-bar-inner" data-level="80%" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="level-title"> Laravel 5.4, 5.6 </h3>
+                    <h3 class="level-title"> MySQL, Postgre, ES </h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%"></div>
+                        <div class="level-bar-inner" data-level="70%" style="width: 70%;"></div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="level-title"> Amazon AWS: S3,SQS, SES </h3>
+                    <h3 class="level-title"> Amazon AWS: S3,SQS, SES, EC2 </h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="75%"></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <h3 class="level-title"> MySQL </h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%"></div>
+                        <div class="level-bar-inner" data-level="60%" style="width: 60%;"></div>
                     </div>
                 </div>
                 <div class="item">
-                    <h3 class="level-title"> Docker, Linux </h3>
+                    <h3 class="level-title"> Docker </h3>
                     <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="level-title"> ZendFramework 1 &amp; 2 </h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="65%"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="level-title"> Javascript &amp; jQuery </h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="level-title"> HTML5 &amp; CSS3 </h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%"></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h3 class="level-title"> Git </h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="90%"></div>
+                        <div class="level-bar-inner" data-level="60%" style="width: 60%;"></div>
                     </div>
                 </div>
             </div>
